@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary
+    x:Class="App1.DataTemplates"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:viewModels="using:App1.ViewModels">
+    
+    <DataTemplate x:Key="RedTemplate" x:DataType="viewModels:RedContentViewModel">
+        <Grid Width="500" Height="500" Background="Red">
+            <TextBlock Text="{x:Bind Text}"/>
+        </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="GreenTemplate" x:DataType="viewModels:GreenContentViewModel">
+        <Grid Width="500" Height="500" Background="Green">
+            <TextBlock Text="{x:Bind Text}"/>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>
